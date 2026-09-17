@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Submit Your Clip | NIGERIAN GAMERS</title>
+
+<meta name="description"
+content="Submit your gaming clip to Ahmstar Gaming and join the Nigerian Gamers community.">
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: white;
+
+    min-height: 100vh;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(0,230,118,0.15),
+            transparent 35%
+        ),
+
+        #05070a;
+}
+
+
+/* =========================
+   NAV
+========================= */
+
+nav {
+
+    height: 70px;
+
+    padding: 0 6%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    background:
+        rgba(5,7,10,0.90);
+
+    backdrop-filter:
+        blur(14px);
+
+    border-bottom:
+        1px solid rgba(255,255,255,0.08);
+}
+
+.logo {
+
+    color: #00e676;
+
+    font-size: 17px;
+
+    font-weight: 900;
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 800;
+
+    font-size: 14px;
+}
+
+nav a:hover {
+
+    color: #00e676;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header {
+
+    text-align: center;
+
+    padding: 65px 20px 35px;
+}
+
+.page-header h1 {
+
+    font-size:
+        clamp(40px,8vw,70px);
+
+    line-height: 1;
+}
+
+.page-header h1 span {
+
+    color: #00e676;
+}
+
+.page-header p {
+
+    max-width: 600px;
+
+    margin: 14px auto;
+
+    color: #aeb7c2;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FORM CONTAINER
+========================= */
+
+.form-container {
+
+    width:
+        min(700px,92%);
+
+    margin:
+        auto auto 70px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background: #0d1218;
+
+    border:
+        1px solid rgba(255,255,255,0.10);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.30);
+}
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 15px;
+}
+
+.full {
+
+    grid-column:
+        1 / -1;
+}
+
+label {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 13px;
+
+    font-weight: 900;
+}
+
+input,
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border-radius: 9px;
+
+    border:
+        1px solid rgba(255,255,255,0.12);
+
+    background: #070a0e;
+
+    color: white;
+
+    outline: none;
+
+    font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    border-color: #00e676;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(0,230,118,0.08);
+}
+
+textarea {
+
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+
+/* =========================
+   NOTE
+========================= */
+
+.note {
+
+    margin-top: 13px;
+
+    color: #89939e;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.submit-btn {
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #00e676;
+
+    color: #001;
+
+    font-size: 16px;
+
+    font-weight: 1000;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.submit-btn:hover {
+
+    transform:
+        translateY(-2px);
+
+    filter:
+        brightness(1.08);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 28px 20px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.10);
+
+    color: #89939e;
+
+    font-size: 13px;
+}
+
+footer strong {
+
+    color: white;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:600px) {
+
+    nav {
+        padding: 0 4%;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .form-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .full {
+
+        grid-column:
+            auto;
+    }
+
+    form {
+
+        padding: 19px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+
+    <div class="logo">
+        🇳🇬 NIGERIAN GAMERS
+    </div>
+
+
+    <a href="index.html">
+        ← Back Home
+    </a>
+
+</nav>
+
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="page-header">
+
+    <h1>
+
+        <span>SUBMIT</span>
+        YOUR CLIP 🔥
+
+    </h1>
+
+
+    <p>
+
+        Are you a gamer with an amazing gaming moment?
+
+        Register below and send your best clip
+        to Ahmstar Gaming.
+
+    </p>
+
+</header>
+
+
+
+<!-- =========================
+     FORM → opens email to abdulyekinahmod1@gmail.com
+========================= -->
+
+<main class="form-container">
+
+
+<form id="clipForm">
+
+
+    <div class="form-grid">
+
+
+        <div>
+
+            <label>
+                First Name *
+            </label>
+
+            <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Enter your first name"
+                required
+            >
+
+        </div>
+
+
+
+        <div>
+
+            <label>
+                Last Name *
+            </label>
+
+            <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Enter your last name"
+                required
+            >
+
+        </div>
+
+
+
+        <div>
+
+            <label>
+                Email Address *
+            </label>
+
+            <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+        </div>
+
+
+
+        <div>
+
+            <label>
+                Phone Number *
+            </label>
+
+            <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+                required
+            >
+
+        </div>
+
+
+
+        <div>
+
+            <label>
+                TikTok Username *
+            </label>
+
+            <input
+                type="text"
+                name="tiktok"
+                id="tiktok"
+                placeholder="@yourusername"
+                required
+            >
+
+        </div>
+
+
+
+        <div>
+
+            <label>
+                Main Game *
+            </label>
+
+            <select
+                name="game"
+                id="game"
+                required
+            >
+
+                <option value="">
+                    Choose your game
+                </option>
+
+                <option>
+                    Call of Duty Mobile
+                </option>
+
+                <option>
+                    Blood Strike
+                </option>
+
+                <option>
+                    Free Fire
+                </option>
+
+                <option>
+                    Fortnite
+                </option>
+
+                <option>
+                    PUBG Mobile
+                </option>
+
+                <option>
+                    Other
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="full">
+
+            <label>
+                Clip Link *
+            </label>
+
+            <input
+                type="url"
+                name="clip"
+                id="clip"
+                placeholder="Paste your TikTok, YouTube or Google Drive link"
+                required
+            >
+
+        </div>
+
+
+
+        <div class="full">
+
+            <label>
+                Tell us about your clip
+            </label>
+
+            <textarea
+                name="message"
+                id="message"
+                placeholder="Tell us what happened in your gaming clip..."
+            ></textarea>
+
+        </div>
+
+
+    </div>
+
+
+
+    <p class="note">
+
+        * Required fields.
+
+        When you tap submit, your email app will open with the details ready to send to the Nigerian Gamers team.
+
+    </p>
+
+
+
+    <button
+        type="submit"
+        class="submit-btn">
+
+        🔥 REGISTER & SUBMIT CLIP
+
+    </button>
+
+
+</form>
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    © 2026
+
+    <strong>
+        ahmstar_gaming
+    </strong>
+
+    · NIGERIAN GAMERS 🇳🇬
+
+</footer>
+
+
+<script>
+document.getElementById("clipForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    var firstName = document.getElementById("firstName").value.trim();
+    var lastName = document.getElementById("lastName").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var tiktok = document.getElementById("tiktok").value.trim();
+    var game = document.getElementById("game").value;
+    var clip = document.getElementById("clip").value.trim();
+    var message = document.getElementById("message").value.trim();
+
+    var subject = "New Gaming Clip — " + firstName + " " + lastName;
+
+    var body =
+        "NIGERIAN GAMERS — Clip Submission%0A%0A" +
+        "First Name: " + encodeURIComponent(firstName) + "%0A" +
+        "Last Name: " + encodeURIComponent(lastName) + "%0A" +
+        "Email: " + encodeURIComponent(email) + "%0A" +
+        "Phone: " + encodeURIComponent(phone) + "%0A" +
+        "TikTok: " + encodeURIComponent(tiktok) + "%0A" +
+        "Game: " + encodeURIComponent(game) + "%0A" +
+        "Clip Link: " + encodeURIComponent(clip) + "%0A%0A" +
+        "Message:%0A" + encodeURIComponent(message || "(none)");
+
+    window.location.href =
+        "mailto:abdulyekinahmod1@gmail.com?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" + body;
+});
+</script>
+
+
+</body>
+</html>
